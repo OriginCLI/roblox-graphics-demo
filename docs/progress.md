@@ -1,7 +1,7 @@
-# Drowned Reliquary production record
+# Lumenwild production record
 
-- Started: 2026-09-13 14:15:11 UTC. Hard deadline: 15:15:11 UTC.
-- Save/review/commit/push reserve begins at 15:08 UTC.
+- Original start: 14:15:11 UTC. User reset the full hour after selecting enchanted forest. Restart: 2026-09-13 14:27:02 UTC. New hard deadline: 15:27:02 UTC.
+- Save/review/commit/push reserve begins at 15:20 UTC.
 - Initial Git: clean `dream-loop/demo`, tracking `origin/dream-loop/demo`.
 - Existing service folders and `StarterPlayer/INFO.md` inspected. StarterPlayer itself is not synced; its script containers are.
 - Native Blender MCP connected, Blender 5.1.2, unsaved default scene. Preserve default scene and build in a dedicated scene.
@@ -34,3 +34,17 @@ Importer supports FBX/glTF, PBR, separate named meshes, scene positioning and an
 
 ## Direction selection
 At 14:20 UTC user requested a different world style, then five separate concept images to choose from. Scene modeling is paused pending selection. General controls have been authored and file-to-Studio synchronization verified for all three scripts; runtime behavior is not yet tested. The original cathedral target is superseded.
+
+
+## Selected direction
+At 14:27:02 UTC user selected enchanted forest concept and explicitly reset the one-hour timer. New deadline 15:27:02 UTC. Lumenwild: giant voxel canopies, wet mossy pilgrim paths, a turquoise waterfall and stream, cyan mushrooms, old stone shrine and amber lanterns. The selected generated concept is the visual target; all geometry will be built in Blender.
+
+
+## First playable and critique
+- Blender first pass: 204 mesh objects / 73,656 evaluated triangles. Default Blender scene preserved. GLB import succeeded with uploaded mesh and PBR texture IDs.
+- Import Front/Top rotated geometry 180 degrees around Y; verified and corrected. Mesh names came from data blocks under named model wrappers, so setup restores object names and materials.
+- Realistic lighting selected through Studio Properties (MCP writes are protected); verified live. PrioritizeLightingQuality is true.
+- First Play exposed missing streamed world with custom avatar disabled. Disabled streaming in Edit and made world persistent; subsequent Play verified all 187 environment meshes and 17-part local traveler.
+- Actual 1080p viewport sample around 60fps, but full sustained performance acceptance remains open. Console empty. Click movement and wheel zoom verified; drag delta fix authored and awaits retest.
+- Independent Dream Loop judge scored runtime-01 2.0/10 (composition0.5 lighting0.7 materials0.6 details0.2). Main gaps: square plaza instead of diagonal bridge, missing giant tree shrine and ravine, rigid waterfall, oversimple canopy, cool flat lighting. Major composition rebuild underway.
+

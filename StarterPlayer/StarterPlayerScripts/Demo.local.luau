@@ -35,6 +35,7 @@ local yaw, desiredYaw = Config.CameraYaw, Config.CameraYaw
 local distance, desiredDistance = Config.CameraDistance, Config.CameraDistance
 local heading = 0
 local dragging, moved, pressPosition = false, false, Vector2.zero
+local lastPointer = Vector2.zero
 local phase = 0
 local frameTimes = {}
 local totalTime = 0
@@ -84,12 +85,16 @@ UserInputService.InputBegan:Connect(function(input, processed)
   dragging = true
   moved = input.UserInputType == Enum.UserInputType.MouseButton2
   pressPosition = UserInputService:GetMouseLocation()
+  lastPointer = pressPosition
  end
 end)
 UserInputService.InputChanged:Connect(function(input, processed)
  if input.UserInputType == Enum.UserInputType.MouseMovement and dragging then
-  if (UserInputService:GetMouseLocation()-pressPosition).Magnitude > 5 then moved = true end
-  if moved then desiredYaw -= input.Delta.X * 0.006 end
+  local pointer = UserInputService:GetMouseLocation()
+  local pointerDelta = pointer - lastPointer
+  lastPointer = pointer
+  if (pointer-pressPosition).Magnitude > 5 then moved = true end
+  if moved then desiredYaw -= pointerDelta.X * 0.006 end
  elseif input.UserInputType == Enum.UserInputType.MouseWheel and not processed then
   desiredDistance = math.clamp(desiredDistance-input.Position.Z*5, Config.MinDistance, Config.MaxDistance)
  end
