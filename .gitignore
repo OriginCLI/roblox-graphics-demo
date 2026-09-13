@@ -1,0 +1,16 @@
+
+# Dream Loop working files
+.dream-loop/
+
+# Blender backups
+*.blend[0-9]*
+
+# Temporary files
+*.tmp
+*.log
+__pycache__/
+
+# Credentials
+.env
+.env.*
+!.env.example
