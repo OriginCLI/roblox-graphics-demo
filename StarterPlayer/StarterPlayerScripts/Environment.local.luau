@@ -50,15 +50,43 @@ for _,p in world:GetDescendants() do
   if light:IsA("PointLight") then table.insert(lights,{light=light,base=light.Brightness,phase=p.Position.X}) end
  end
 end
-local pool=world:FindFirstChild("Water_Pool__Water")
+local pool=world:FindFirstChild("Water_Near__Water") or world:FindFirstChild("Water_Pool__Water")
 if pool then
- for i,position in {Vector3.new(-30,-10,-48),Vector3.new(-51,-11,-67),Vector3.new(20,-12,-71),Vector3.new(-36,-3,17)} do
-  local mist=particles(pool,"RavineMist"..i,"rbxasset://textures/particles/smoke_main.dds",1.4,12,.45,26,Color3.fromRGB(210,219,197))
+ for i,position in {Vector3.new(-61,-15,-22),Vector3.new(-89,-17,-9),Vector3.new(-132,-26,-42),Vector3.new(-43,-5,43),Vector3.new(-24,-5,9),Vector3.new(-145,-13,-45)} do
+  local mist=particles(pool,"RavineMist"..i,"rbxasset://textures/particles/smoke_main.dds",1.7,14,.7,28,Color3.fromRGB(204,221,214))
   mist.Parent.Position=pool.CFrame:PointToObjectSpace(position)
-  mist.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.25,.88),NumberSequenceKeypoint.new(.75,.91),NumberSequenceKeypoint.new(1,1)})
+  mist.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.25,.79),NumberSequenceKeypoint.new(.75,.86),NumberSequenceKeypoint.new(1,1)})
   mist.Rotation=NumberRange.new(-180,180)
   mist.RotSpeed=NumberRange.new(-2,2)
   mist.LightEmission=.15
+ end
+end
+-- Layered moving cascades follow Roblox's official waterfall VFX technique.
+-- Attachments use existing Blender meshes; no scene geometry is made in Luau.
+local cascades={
+ {-24,6,10,-.5,-7}, {-38,31,8,2,-7}, {-60,-30,9,8,-29},
+ {-117,-22,8,1,-29}, {-146,-43,7,2,-48},
+}
+for i,f in cascades do
+ local part=world:FindFirstChild('Fall_'..(i-1)..'__FallVeil')
+ if not part then continue end
+ local x,z,w,top,bottom=table.unpack(f)
+ for layer=1,2 do
+  local a=Instance.new('Attachment');a.Name='CascadeTop'..layer;a.Parent=part
+  a.WorldPosition=Vector3.new(x+(layer-1)*.4,top,z+.15)
+  local b=Instance.new('Attachment');b.Name='CascadeBottom'..layer;b.Parent=part
+  b.WorldPosition=Vector3.new(x,bottom,z+2.3+(layer-1)*.3)
+  local beam=Instance.new('Beam');beam.Name='FlowingCascade'..layer
+  beam.Attachment0=a;beam.Attachment1=b
+  beam.Texture='rbxassetid://16808804567'
+  beam.Width0=w*(layer==1 and .9 or .7);beam.Width1=w*(layer==1 and 1.04 or 1.14)
+  beam.TextureMode=Enum.TextureMode.Wrap;beam.TextureLength=5+layer*2
+  beam.TextureSpeed=layer==1 and 1.3 or .8
+  beam.FaceCamera=true;beam.Segments=12
+  beam.LightEmission=.12;beam.LightInfluence=.65
+  beam.Color=ColorSequence.new(Color3.fromRGB(216,238,231))
+  beam.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,.85),NumberSequenceKeypoint.new(.1,.36),NumberSequenceKeypoint.new(.78,.45),NumberSequenceKeypoint.new(1,1)})
+  beam.Parent=part
  end
 end
 local t = 0

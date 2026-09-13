@@ -2,7 +2,7 @@
 return {
  Title = "L U M E N W I L D",
  Subtitle = "THE LANTERN GROVE",
- Spawn = Vector3.new(0, 0.16, 18),
+ Spawn = Vector3.new(2.6, 0.16, 21.7),
  WalkMin = Vector2.new(-4.5, -18),
  WalkMax = Vector2.new(4.5, 28),
  WalkSpeed = 9,
@@ -13,5 +13,6 @@ return {
  MinDistance = 40,
  MaxDistance = 105,
  FieldOfView = 48,
- FocusOffset = Vector3.new(-6, 8, -10),
+ -- Shift the traveler lower in frame while preserving the exact comparison camera.
+ FocusOffset = Vector3.new(-8.6, 8, -13.7),
 }
