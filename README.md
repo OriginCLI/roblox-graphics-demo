@@ -4,6 +4,8 @@ A desktop Roblox graphics demo: a cloaked traveler on a wet stone bridge leading
 
 ## Open and run
 
+**Refinement in progress, 2026-09-13:** the current saved place includes the sixty-minute extension checkpoint, independently scored **5.1/10** against the unchanged original target (composition 1.9, lighting 1.2, materials 1.4, detail 0.6). Actual screenshot and measurements are in `docs/iterations/02-60min.*` and `docs/extension-progress.md`. The 3600-frame Studio sample averaged 60.0024 FPS at manual quality 10, 1920x1080; p95 17.7425 ms and p99 18.2556 ms. Older validation sections below describe the previous run. Current editable working source is `Assets/Blender/Lumenwild_Working60.blend`, with incremental exports and installers under `Assets/Exports` and `tools/extension`.
+
 1. Check out `dream-loop/demo` and run `git lfs pull` to retrieve the binary assets.
 2. Open `Places/Lumenwild.rbxl` in Roblox Studio. This saved place is the easiest way to run the complete scene; reimporting is not required.
 3. Press Play. Use desktop mouse controls below. For the tested presentation quality, open Roblox Settings, set Graphics Mode to Manual and Graphics Quality to 10.

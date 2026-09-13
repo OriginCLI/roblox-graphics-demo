@@ -1,5 +1,13 @@
 # Three-hour refinement
 
+## Sixty-minute checkpoint
+
+Actual runtime capture `iterations/02-60min.png`, metrics `iterations/02-60min-metrics.json`. Independent critic: **5.1/10** = composition 1.9/3, lighting 1.2/3, materials 1.4/3, detail 0.6/1. Improved rooted tree, wet paving, clustered planting and atmospheric separation. Remaining major gaps are planar water, repeated vertical cliff shapes, regular material patterns, and missing warm directional haze.
+
+3600 frames: mean 60.0024 FPS, p95 17.7425 ms, p99 18.2556 ms. Quality 10, Realistic. User adjusted Studio window bounds; virtual viewport is now 1920x1080, one pixel wider than baseline. Camera transform and FOV remain unchanged. Snapshot 541 draw calls, 761683 rendered triangles, 2611.21 MB memory. These are Studio desktop measurements, not a published client benchmark or proof of every-frame 60 FPS.
+
+Editable incremental Blender scenes: TreePatch2, Landscape3, DepthGarden4, Paving5. `Assets/Blender/Lumenwild_Working60.blend` preserves all working scenes and an adjusted copy of DepthGarden4. Native importer patches and material/lighting settings are recorded under `tools/extension`. New 512px roughness maps loaded successfully in the actual client: WaterGloss_v3 ID 116759003152394; StoneGloss_v3 ID 126979061121564. Earlier rejected/failed swatches remain historical source assets.
+
 Started 2026-09-13 15:42:59 UTC. Hard finish 18:42:59 UTC; final verification reserve starts 18:27:59 UTC. Comparison checkpoints approximately 16:13, 16:43, 17:13, 17:43, 18:13 UTC. Two-hour report due 17:43 UTC.
 
 Original target remains `.dream-loop/target.png`, SHA256 DE9324B5ADAAFB321F5FBDFDBCD702ED5CD3327631BBA397FCB2DEC7BD296F94. Fixed rubric: composition 3, lighting 3, materials 3, details 1. No target regeneration.

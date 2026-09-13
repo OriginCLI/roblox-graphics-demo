@@ -25,7 +25,7 @@ end
 local mushroomCount = 0
 for _,p in world:GetDescendants() do
  if not p:IsA("BasePart") then continue end
- if p.Name:find("Canopy_") or p.Name:find("Vines_") then
+ if p.Name:find("Canopy_") or p.Name:find("Vines_") or p.Name:find("CanopyVolume_") or p.Name:find("CanopyFringe_") or p.Name:find("VinesVolume_") or p.Name:find("VineLeafVolume_") then
   table.insert(moving,{part=p,origin=p.CFrame,phase=p.Position.X*.12+p.Position.Z*.07,kind="leaves"})
  elseif p.Name:find("FallStreak") or p.Name:find("Foam_") then
   table.insert(moving,{part=p,origin=p.CFrame,phase=p.Position.Y,kind="water"})
@@ -64,7 +64,7 @@ end
 -- Layered moving cascades follow Roblox's official waterfall VFX technique.
 -- Attachments use existing Blender meshes; no scene geometry is made in Luau.
 local cascades={
- {-24,6,10,-.5,-7}, {-38,31,8,2,-7}, {-60,-30,9,8,-29},
+ {-24,6,10,-.5,-5}, {-38,31,8,2,-5}, {-60,-30,9,8,-29},
  {-117,-22,8,1,-29}, {-146,-43,7,2,-48},
 }
 for i,f in cascades do
