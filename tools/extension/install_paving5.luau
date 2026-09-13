@@ -11,6 +11,7 @@ for _,p in patch:GetDescendants() do
  p.Name=p.Parent.Name:gsub('%.%d+$','')
  if p.Name:match('^Data_') then ids[p.Name]=p.TextureID;p.Parent=data;continue end
  p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=p.Name:match('^Walkable_')~=nil;p.DoubleSided=true;p.RenderFidelity=Enum.RenderFidelity.Automatic;p.Parent=world;n+=1
+ p:SetAttribute('Walkable',p.CanQuery)
  local sa=p:FindFirstChildOfClass('SurfaceAppearance')
  if sa then sa.RoughnessMap='rbxassetid://140651532164331';sa.MetalnessMap='';sa.Color=Color3.fromRGB(188,196,188) end
 end

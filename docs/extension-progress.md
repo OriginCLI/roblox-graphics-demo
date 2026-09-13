@@ -1,5 +1,21 @@
 # Three-hour refinement
 
+## Intermediate movement and geometry checks
+
+The new paving initially lacked the `Walkable` attribute used by the input raycast. Movement testing exposed it; the installer and Edit data model now set the attribute. An actual click moved the traveler from (2.6,0.16,21.7) toward (-0.079,0.16,-8.150), reaching (-0.069,0.16,-8.032). Right-drag changed yaw from 0.610865 to 1.14585 and then 0.18119 radians; scroll changed distance 67 to 62.
+
+The instrumented moving/orbit sample fell to 54.25 average FPS with p99 67.07 ms. This is a failed stable-60 result; it includes active MCP input/capture operations and new views. Cause is not isolated. After returning to the fixed camera and warming a fresh run, 3600 frames averaged 60.0025 FPS, p95 17.7480 ms, p99 18.2360 ms, with 611 draw calls and 1150069 rendered triangles. Moving-camera validation must be repeated before final delivery.
+
+Orbit inspection exposed open seams between cliff strata and distant trees ending above the basin. CliffIntegrity8 replaces open cliff sheets with overlapping closed stone volumes; CanopyGrounded9 is prepared to replace disk-like crowns and extend distant roots to the basin. WaterRuins6 models a continuous riverbed and shallow surface waves, open abbey ruins and another aqueduct. Foreground7 replaces bridge parapets and adds larger mushroom and broad-leaf silhouettes. The water replacement also broke a name-based mist attachment; the synchronized Environment script now finds the new pool mesh.
+
+## Ninety-minute checkpoint
+
+Actual runtime `iterations/03-90min.png`; independent critic **6.0/10** = composition 2.2/3, lighting 1.6/3, materials 1.6/3, details 0.6/1. The broader curved foreground bridge, closed cliff seams, irregular crown outlines, open ruined abbey, and grounded far trees improve correspondence. Remaining gaps: too much open right-hand water, repetitive root and terrain blocks, uniform gray-green haze, and simplistic lantern housings. Camera remains fixed; the critic's proposed camera movement is not adopted because comparison consistency is required.
+
+3600 stationary frames: mean 60.0031 FPS, p95 17.7281 ms, p99 18.2777 ms; snapshot 613 draw calls, 1250439 triangles, 2550.16 MB. Same 1920x1080 virtual viewport, manual quality 10 and Realistic lighting. Earlier movement spikes remain unresolved, not excluded from the performance record.
+
+Editable source is consolidated in `Assets/Blender/Lumenwild_Consolidated90.blend`: all 18 source scenes and 31 packed images. Redundant uncommitted intermediate full-file snapshots were removed after verifying their scenes in the consolidated file when C: ran out of space. Their scripts and GLBs remain. The assembled scene matches all 609 pre-BridgeFlow10 mesh sources; the subsequent Flow10 source scene is also preserved. The saved place includes all patches through BridgeFlow10, opened castle sightline and lantern balance. The missing Walkable attribute on replacement paving was repaired and verified with real click-to-walk and drag/zoom input.
+
 ## Sixty-minute checkpoint
 
 Actual runtime capture `iterations/02-60min.png`, metrics `iterations/02-60min-metrics.json`. Independent critic: **5.1/10** = composition 1.9/3, lighting 1.2/3, materials 1.4/3, detail 0.6/1. Improved rooted tree, wet paving, clustered planting and atmospheric separation. Remaining major gaps are planar water, repeated vertical cliff shapes, regular material patterns, and missing warm directional haze.

@@ -25,7 +25,7 @@ end
 local mushroomCount = 0
 for _,p in world:GetDescendants() do
  if not p:IsA("BasePart") then continue end
- if p.Name:find("Canopy_") or p.Name:find("Vines_") or p.Name:find("CanopyVolume_") or p.Name:find("CanopyFringe_") or p.Name:find("VinesVolume_") or p.Name:find("VineLeafVolume_") then
+ if p.Name:find("Canopy_") or p.Name:find("Vines_") or p.Name:find("CanopyVolume_") or p.Name:find("CanopyFringe_") or p.Name:find("CanopyWild") or p.Name:find("VinesVolume_") or p.Name:find("VineLeafVolume_") then
   table.insert(moving,{part=p,origin=p.CFrame,phase=p.Position.X*.12+p.Position.Z*.07,kind="leaves"})
  elseif p.Name:find("FallStreak") or p.Name:find("Foam_") then
   table.insert(moving,{part=p,origin=p.CFrame,phase=p.Position.Y,kind="water"})
@@ -50,7 +50,7 @@ for _,p in world:GetDescendants() do
   if light:IsA("PointLight") then table.insert(lights,{light=light,base=light.Brightness,phase=p.Position.X}) end
  end
 end
-local pool=world:FindFirstChild("Water_Near__Water") or world:FindFirstChild("Water_Pool__Water")
+local pool=world:FindFirstChild("WaterNear6__Water") or world:FindFirstChild("Water_Near__Water") or world:FindFirstChild("Water_Pool__Water")
 if pool then
  for i,position in {Vector3.new(-61,-15,-22),Vector3.new(-89,-17,-9),Vector3.new(-132,-26,-42),Vector3.new(-43,-5,43),Vector3.new(-24,-5,9),Vector3.new(-145,-13,-45)} do
   local mist=particles(pool,"RavineMist"..i,"rbxasset://textures/particles/smoke_main.dds",1.7,14,.7,28,Color3.fromRGB(204,221,214))
@@ -58,7 +58,19 @@ if pool then
   mist.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.25,.79),NumberSequenceKeypoint.new(.75,.86),NumberSequenceKeypoint.new(1,1)})
   mist.Rotation=NumberRange.new(-180,180)
   mist.RotSpeed=NumberRange.new(-2,2)
-  mist.LightEmission=.15
+ mist.LightEmission=.15
+ end
+ -- Soft directional shafts use supported Beams, attached to the modeled pool.
+ local sun=game:GetService('Lighting'):GetSunDirection()
+ for i,finish in {Vector3.new(-60,-8,-17),Vector3.new(-43,-6,12),Vector3.new(-17,-3,-8),Vector3.new(-77,-14,-40)} do
+  local a=Instance.new('Attachment');a.Name='SunShaftTop'..i;a.Parent=pool;a.WorldPosition=finish+sun*90
+  local b=Instance.new('Attachment');b.Name='SunShaftBottom'..i;b.Parent=pool;b.WorldPosition=finish
+  local beam=Instance.new('Beam');beam.Name='SunShaft'..i;beam.Attachment0=a;beam.Attachment1=b
+  beam.Texture='rbxasset://textures/particles/smoke_main.dds';beam.TextureMode=Enum.TextureMode.Stretch;beam.TextureSpeed=0
+  beam.Width0=2;beam.Width1=12;beam.FaceCamera=true;beam.Segments=10
+  beam.Color=ColorSequence.new(Color3.fromRGB(255,224,163));beam.LightEmission=1;beam.LightInfluence=0
+  beam.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.3,.68),NumberSequenceKeypoint.new(.65,.62),NumberSequenceKeypoint.new(1,1)})
+  beam.Parent=pool
  end
 end
 -- Layered moving cascades follow Roblox's official waterfall VFX technique.
