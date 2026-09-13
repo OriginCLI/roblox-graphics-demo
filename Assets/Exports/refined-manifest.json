@@ -1,0 +1,14 @@
+{
+  "scene": "Lumenwild_Refined",
+  "iteration": 4,
+  "meshObjects": 357,
+  "triangles": 270046,
+  "walkBounds": [
+    -4.5,
+    -18,
+    4.5,
+    28
+  ],
+  "geometrySource": "Blender 5.1.2 MCP",
+  "depthInstances": 120
+}

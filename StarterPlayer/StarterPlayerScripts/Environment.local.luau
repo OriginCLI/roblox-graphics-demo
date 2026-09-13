@@ -50,6 +50,17 @@ for _,p in world:GetDescendants() do
   if light:IsA("PointLight") then table.insert(lights,{light=light,base=light.Brightness,phase=p.Position.X}) end
  end
 end
+local pool=world:FindFirstChild("Water_Pool__Water")
+if pool then
+ for i,position in {Vector3.new(-30,-10,-48),Vector3.new(-51,-11,-67),Vector3.new(20,-12,-71),Vector3.new(-36,-3,17)} do
+  local mist=particles(pool,"RavineMist"..i,"rbxasset://textures/particles/smoke_main.dds",1.4,12,.45,26,Color3.fromRGB(210,219,197))
+  mist.Parent.Position=pool.CFrame:PointToObjectSpace(position)
+  mist.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.25,.88),NumberSequenceKeypoint.new(.75,.91),NumberSequenceKeypoint.new(1,1)})
+  mist.Rotation=NumberRange.new(-180,180)
+  mist.RotSpeed=NumberRange.new(-2,2)
+  mist.LightEmission=.15
+ end
+end
 local t = 0
 RunService.Heartbeat:Connect(function(dt)
  t += math.min(dt,.1)

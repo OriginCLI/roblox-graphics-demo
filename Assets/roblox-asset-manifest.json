@@ -1,0 +1,2297 @@
+{
+  "studioVersion": "0.738.0.7381393",
+  "version": 1,
+  "surfaces": [
+    {
+      "colorMap": "rbxassetid://91629842365012",
+      "normalMap": "rbxassetid://76678769460493",
+      "roughnessMap": "",
+      "color": [
+        0.6784313917160034,
+        0.7450980544090271,
+        0.6784313917160034
+      ],
+      "metalnessMap": ""
+    },
+    {
+      "colorMap": "",
+      "normalMap": "",
+      "roughnessMap": "rbxassetid://81153879509226",
+      "color": [
+        0.6627451181411743,
+        0.501960813999176,
+        0.23529411852359772
+      ],
+      "metalnessMap": "rbxassetid://122563081121465"
+    },
+    {
+      "colorMap": "",
+      "normalMap": "rbxassetid://98564679456510",
+      "roughnessMap": "",
+      "color": [
+        0.6431372761726379,
+        0.8509804010391235,
+        0.7921568751335144
+      ],
+      "metalnessMap": ""
+    },
+    {
+      "colorMap": "",
+      "normalMap": "rbxassetid://98564679456510",
+      "roughnessMap": "rbxassetid://81153879509226",
+      "color": [
+        0.27450981736183167,
+        0.5803921818733215,
+        0.5372549295425415
+      ],
+      "metalnessMap": ""
+    },
+    {
+      "colorMap": "rbxassetid://91629842365012",
+      "normalMap": "rbxassetid://76678769460493",
+      "roughnessMap": "rbxassetid://81153879509226",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "metalnessMap": ""
+    },
+    {
+      "colorMap": "",
+      "normalMap": "",
+      "roughnessMap": "rbxassetid://81153879509226",
+      "color": [
+        0.4117647111415863,
+        0.4901960790157318,
+        0.501960813999176
+      ],
+      "metalnessMap": "rbxassetid://122563081121465"
+    }
+  ],
+  "meshes": [
+    {
+      "surface": 6,
+      "name": "Actor_ArmL__Armor",
+      "meshId": "rbxassetid://81312807579810",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 6,
+      "name": "Actor_ArmR__Armor",
+      "meshId": "rbxassetid://107501156614472",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 2,
+      "name": "Actor_Belt__Brass",
+      "meshId": "rbxassetid://139051486184281",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 6,
+      "name": "Actor_Body__Armor",
+      "meshId": "rbxassetid://86827408350195",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 6,
+      "name": "Actor_BootL__Armor",
+      "meshId": "rbxassetid://94181859226817",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 6,
+      "name": "Actor_BootR__Armor",
+      "meshId": "rbxassetid://72815631681070",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://86334665274223",
+      "name": "Actor_Cloak__Cloth",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://108727694589552",
+      "name": "Actor_Face__Face",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://94274905720191",
+      "name": "Actor_Hood__Cloth",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://95819442846624",
+      "name": "Actor_Lantern__GlowAmber",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://92116857584792",
+      "name": "Actor_LegL__Leather",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://90864935770158",
+      "name": "Actor_LegR__Leather",
+      "container": "Traveler"
+    },
+    {
+      "surface": 2,
+      "name": "Actor_PauldronL__Brass",
+      "meshId": "rbxassetid://84638807170757",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 6,
+      "name": "Actor_PauldronR__Armor",
+      "meshId": "rbxassetid://105381878556399",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 2,
+      "name": "Actor_SwordGuard__Brass",
+      "meshId": "rbxassetid://124155886954984",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "surface": 6,
+      "name": "Actor_Sword__Armor",
+      "meshId": "rbxassetid://109585329692959",
+      "textureId": "",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://131707366023578",
+      "name": "Actor_Visor__Leather",
+      "container": "Traveler"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://90200248074182",
+      "name": "BarkPlates__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://129072730818190",
+      "name": "BarkPlates__BarkLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "BridgeFootings__Stone",
+      "meshId": "rbxassetid://93048369903664",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://132037666849677",
+      "name": "BridgeIvy__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://95755013069799",
+      "name": "BridgePierMoss__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "BridgePiers__StoneLight",
+      "meshId": "rbxassetid://70432038289801",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "BridgeSides__Stone",
+      "meshId": "rbxassetid://104259987431267",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "BrokenParapets__Stone",
+      "meshId": "rbxassetid://132217159580230",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://118745757049512",
+      "name": "Canopy_00__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://71635931516023",
+      "name": "Canopy_00__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://112760912120259",
+      "name": "Canopy_00__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://70574118769778",
+      "name": "Canopy_00__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://103245183003953",
+      "name": "Canopy_01__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://94969722742267",
+      "name": "Canopy_01__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://81257942455272",
+      "name": "Canopy_01__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://75318094239977",
+      "name": "Canopy_01__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://128847735467477",
+      "name": "Canopy_02__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://104961552271917",
+      "name": "Canopy_02__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://108568652937738",
+      "name": "Canopy_02__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://114781698547376",
+      "name": "Canopy_02__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://79891326209823",
+      "name": "Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://122156827139910",
+      "name": "Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://78070025430895",
+      "name": "Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://94384187672349",
+      "name": "Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://115961415763575",
+      "name": "Canopy_04__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://73171708232997",
+      "name": "Canopy_04__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://73191368078699",
+      "name": "Canopy_04__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://86270813898482",
+      "name": "Canopy_04__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://125350732874421",
+      "name": "Canopy_05__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://86912266186304",
+      "name": "Canopy_05__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://119893892442661",
+      "name": "Canopy_05__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://113547429361491",
+      "name": "Canopy_05__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://75664230713683",
+      "name": "Canopy_06__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://126291898251695",
+      "name": "Canopy_06__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://117221908717800",
+      "name": "Canopy_06__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://116403523731603",
+      "name": "Canopy_06__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://126048128018795",
+      "name": "Canopy_HeroA__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://117977440124525",
+      "name": "Canopy_HeroA__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://97874534266026",
+      "name": "Canopy_HeroA__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://115303767267825",
+      "name": "Canopy_HeroA__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90480957519387",
+      "name": "Canopy_HeroB__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://129855444058289",
+      "name": "Canopy_HeroB__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://89823490624430",
+      "name": "Canopy_HeroB__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://97833487343954",
+      "name": "Canopy_HeroB__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://125635300260657",
+      "name": "Canopy_HeroC__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://78409516496209",
+      "name": "Canopy_HeroC__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://127241871026207",
+      "name": "Canopy_HeroC__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://95096288591332",
+      "name": "Canopy_HeroC__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "CitadelCrown__StoneLight",
+      "meshId": "rbxassetid://118292909235910",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "CitadelGate__Stone",
+      "meshId": "rbxassetid://112789674308267",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "CitadelGround__Stone",
+      "meshId": "rbxassetid://87898939031700",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "CitadelSpire__Stone",
+      "meshId": "rbxassetid://99358115731206",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Citadel__Stone",
+      "meshId": "rbxassetid://130324145876428",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://98451787818291",
+      "name": "Depth_00_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://97851976165498",
+      "name": "Depth_00_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://77351660454276",
+      "name": "Depth_00_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://132644975909726",
+      "name": "Depth_00_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://89310662299600",
+      "name": "Depth_00_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://94594554984115",
+      "name": "Depth_00_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_00_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://120080462651158",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_00_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://127283668074270",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://125658936729301",
+      "name": "Depth_00_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://101160132631340",
+      "name": "Depth_00_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://85475859198078",
+      "name": "Depth_00_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://99762670166478",
+      "name": "Depth_00_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90681067503814",
+      "name": "Depth_01_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://134001101654053",
+      "name": "Depth_01_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://135341912113846",
+      "name": "Depth_01_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://92619788632128",
+      "name": "Depth_01_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://70528561982734",
+      "name": "Depth_01_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://114745648068166",
+      "name": "Depth_01_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_01_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://107755784500377",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_01_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://135116892809126",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://98970858600067",
+      "name": "Depth_01_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://115171467779895",
+      "name": "Depth_01_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://128120241819412",
+      "name": "Depth_01_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90412744203410",
+      "name": "Depth_01_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://102552360840216",
+      "name": "Depth_02_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://121765226057516",
+      "name": "Depth_02_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://127458818034011",
+      "name": "Depth_02_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://77252848458840",
+      "name": "Depth_02_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://94769899442018",
+      "name": "Depth_02_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://114324802855385",
+      "name": "Depth_02_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_02_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://128540806264591",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_02_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://129165157369876",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://137061894096570",
+      "name": "Depth_02_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://89456055369011",
+      "name": "Depth_02_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://80057923984930",
+      "name": "Depth_02_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://122578000719901",
+      "name": "Depth_02_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://88479448055548",
+      "name": "Depth_03_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://123931614002450",
+      "name": "Depth_03_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://133326362428579",
+      "name": "Depth_03_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://102583185318230",
+      "name": "Depth_03_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://132504951503467",
+      "name": "Depth_03_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://138651978747952",
+      "name": "Depth_03_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_03_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://140441264747203",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_03_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://111244410815277",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://71041970215694",
+      "name": "Depth_03_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://85725954619234",
+      "name": "Depth_03_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://84733268206770",
+      "name": "Depth_03_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://93009682143581",
+      "name": "Depth_03_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://96473038550658",
+      "name": "Depth_04_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://102896501712973",
+      "name": "Depth_04_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://73443315291613",
+      "name": "Depth_04_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://117505045319457",
+      "name": "Depth_04_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://119995262025965",
+      "name": "Depth_04_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://128330289267270",
+      "name": "Depth_04_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_04_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://94690708384623",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_04_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://139722455574876",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://123714431942763",
+      "name": "Depth_04_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://133710733622955",
+      "name": "Depth_04_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://133407835573536",
+      "name": "Depth_04_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://109392663628427",
+      "name": "Depth_04_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://134446656284601",
+      "name": "Depth_05_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://120648946263184",
+      "name": "Depth_05_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://97784905569114",
+      "name": "Depth_05_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://77966526640060",
+      "name": "Depth_05_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://76344290998261",
+      "name": "Depth_05_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://82977503376601",
+      "name": "Depth_05_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_05_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://123627465555340",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_05_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://129650997687053",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://139679284458664",
+      "name": "Depth_05_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://114925325693136",
+      "name": "Depth_05_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://72032516478987",
+      "name": "Depth_05_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://83971607819221",
+      "name": "Depth_05_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://124689548775249",
+      "name": "Depth_06_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://114650180506955",
+      "name": "Depth_06_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://88838331530820",
+      "name": "Depth_06_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://135663755776969",
+      "name": "Depth_06_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://75976579586688",
+      "name": "Depth_06_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://105185407706433",
+      "name": "Depth_06_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_06_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://79002819697209",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_06_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://73084149589783",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://139679284458664",
+      "name": "Depth_06_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://103608576148704",
+      "name": "Depth_06_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90200025880634",
+      "name": "Depth_06_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://126008531113740",
+      "name": "Depth_06_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://115566297285516",
+      "name": "Depth_07_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://138342893135569",
+      "name": "Depth_07_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90518932361712",
+      "name": "Depth_07_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://83737700948795",
+      "name": "Depth_07_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://118943215707925",
+      "name": "Depth_07_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://115500385740443",
+      "name": "Depth_07_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_07_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://102330848992549",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_07_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://98222549408350",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://140544216564727",
+      "name": "Depth_07_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://111597855500073",
+      "name": "Depth_07_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://128530362722064",
+      "name": "Depth_07_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://98406718348739",
+      "name": "Depth_07_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://126793074590936",
+      "name": "Depth_08_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://136596064346995",
+      "name": "Depth_08_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://139474935850497",
+      "name": "Depth_08_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://106056935136129",
+      "name": "Depth_08_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://95548675293459",
+      "name": "Depth_08_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://138166996374790",
+      "name": "Depth_08_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_08_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://105921145653017",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_08_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://79969472339033",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://123714431942763",
+      "name": "Depth_08_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://106585154567741",
+      "name": "Depth_08_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://124088696140529",
+      "name": "Depth_08_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://82528596389318",
+      "name": "Depth_08_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://98431269215871",
+      "name": "Depth_09_Canopy_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://123014963021199",
+      "name": "Depth_09_Canopy_03__LeafGold",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://74170237991266",
+      "name": "Depth_09_Canopy_03__LeafLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://111909820921946",
+      "name": "Depth_09_Canopy_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://129393213728715",
+      "name": "Depth_09_IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://81205915277456",
+      "name": "Depth_09_IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_09_Island_FarLeft__Stone",
+      "meshId": "rbxassetid://96619537132971",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Depth_09_LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://74848724412607",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://117205197810562",
+      "name": "Depth_09_Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://88875107885123",
+      "name": "Depth_09_VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90766649825440",
+      "name": "Depth_09_VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://117935278460699",
+      "name": "Depth_09_Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "DistantBridgeDeck__Stone",
+      "meshId": "rbxassetid://117727606030619",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "DistantBridgeRail__StoneLight",
+      "meshId": "rbxassetid://83809747448073",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "DistantBridge__Stone",
+      "meshId": "rbxassetid://73073132577012",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://110850820421197",
+      "name": "EdgeMoss__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 3,
+      "name": "Fall_0__Waterfall",
+      "meshId": "rbxassetid://76153031122040",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 3,
+      "name": "Fall_1__Waterfall",
+      "meshId": "rbxassetid://120988581267184",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 3,
+      "name": "Fall_2__Waterfall",
+      "meshId": "rbxassetid://139086008266268",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 3,
+      "name": "Fall_3__Waterfall",
+      "meshId": "rbxassetid://109985743727281",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 3,
+      "name": "Fall_4__Waterfall",
+      "meshId": "rbxassetid://117591378436805",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://74347267483758",
+      "name": "Foam_0__Foam",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://113250756148894",
+      "name": "Foam_1__Foam",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://89014484511907",
+      "name": "Foam_2__Foam",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://109445651265465",
+      "name": "Foam_3__Foam",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://82702237928351",
+      "name": "Foam_4__Foam",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://95130103694143",
+      "name": "Glow_Lantern_0__GlowAmber",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://104355001250341",
+      "name": "Glow_Lantern_1__GlowAmber",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://128912902032061",
+      "name": "Glow_Lantern_2__GlowAmber",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://78305966370116",
+      "name": "Glow_Mushroom_00__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://93562657929938",
+      "name": "Glow_Mushroom_01__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://105260051102570",
+      "name": "Glow_Mushroom_02__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://97601400813784",
+      "name": "Glow_Mushroom_03__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://122377606431621",
+      "name": "Glow_Mushroom_04__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://72918134617349",
+      "name": "Glow_Mushroom_05__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://109675287705297",
+      "name": "Glow_Mushroom_06__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://71406349142842",
+      "name": "Glow_Mushroom_07__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://98854125168037",
+      "name": "Glow_Mushroom_08__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://105406506301048",
+      "name": "Glow_Mushroom_09__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://106267512491660",
+      "name": "Glow_Mushroom_10__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://102945165049853",
+      "name": "Glow_Mushroom_11__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://106283718418583",
+      "name": "Glow_Mushroom_12__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://78432960912194",
+      "name": "Glow_Mushroom_13__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://131964095692704",
+      "name": "Glow_Mushroom_14__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://104743470701912",
+      "name": "Glow_Mushroom_15__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://87869531036910",
+      "name": "Glow_Mushroom_16__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://84493017295061",
+      "name": "Glow_Mushroom_17__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://76634784714037",
+      "name": "Glow_Mushroom_18__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://87524489976448",
+      "name": "Glow_Mushroom_19__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://89921814544609",
+      "name": "Glow_Mushroom_20__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://138074966606233",
+      "name": "Glow_Mushroom_21__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://83422117293755",
+      "name": "Glow_Mushroom_22__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://113669372022759",
+      "name": "Glow_Mushroom_23__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://71419138608437",
+      "name": "Glow_Mushroom_24__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://139521294566674",
+      "name": "Glow_Mushroom_25__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://128251483053249",
+      "name": "Glow_Mushroom_26__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://115526571010685",
+      "name": "Glow_Mushroom_27__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://93456566987354",
+      "name": "Glow_Mushroom_28__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://122919018559376",
+      "name": "Glow_Mushroom_29__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://92916859614597",
+      "name": "Glow_Mushroom_30__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://110301741915924",
+      "name": "Glow_Mushroom_31__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://120448025903613",
+      "name": "Glow_Mushroom_32__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://72479400854994",
+      "name": "Glow_Mushroom_33__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://100197269033481",
+      "name": "Glow_Mushroom_34__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://109044182916306",
+      "name": "Glow_Mushroom_35__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://115090641361524",
+      "name": "Glow_Mushroom_36__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://85639345978816",
+      "name": "Glow_Mushroom_37__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://132486611809924",
+      "name": "Glow_Mushroom_38__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://84831623893005",
+      "name": "Glow_Mushroom_39__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://100198368384960",
+      "name": "Glow_Mushroom_40__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://131846767167985",
+      "name": "Glow_Mushroom_41__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://138668071311153",
+      "name": "Glow_Mushroom_42__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://88360179404790",
+      "name": "Glow_Mushroom_43__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://76037640562472",
+      "name": "Glow_Mushroom_44__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://139920742378452",
+      "name": "Glow_Mushroom_45__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://116562980830662",
+      "name": "Glow_Mushroom_46__GlowCyan",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://140021518465489",
+      "name": "HeroBranch__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://113500619449390",
+      "name": "HeroRoots__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://71096265886131",
+      "name": "HeroTrunk__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://133678113135624",
+      "name": "IslandMoss_FarLeft__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://87511292787623",
+      "name": "IslandMoss_FarLeft__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://95305306414197",
+      "name": "IslandMoss_FarMid__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://96041442865566",
+      "name": "IslandMoss_FarMid__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://108677932892296",
+      "name": "IslandMoss_FarRight__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://129899111042326",
+      "name": "IslandMoss_FarRight__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://104189158778449",
+      "name": "IslandMoss_Hero__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://114966689230695",
+      "name": "IslandMoss_Hero__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://105128194198296",
+      "name": "IslandMoss_LeftMid__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://71751740839151",
+      "name": "IslandMoss_LeftMid__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://139057715547077",
+      "name": "IslandMoss_LeftNear__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://101476685213828",
+      "name": "IslandMoss_LeftNear__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://90679776082873",
+      "name": "IslandMoss_RightBack__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://75456663744307",
+      "name": "IslandMoss_RightBack__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://96260047654127",
+      "name": "IslandMoss_RightNear__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://92770037263556",
+      "name": "IslandMoss_RightNear__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_FarLeft__Stone",
+      "meshId": "rbxassetid://72699980155585",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_FarMid__Stone",
+      "meshId": "rbxassetid://108766176038746",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_FarRight__Stone",
+      "meshId": "rbxassetid://96166819604214",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_Hero__Stone",
+      "meshId": "rbxassetid://122573550318407",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_LeftMid__Stone",
+      "meshId": "rbxassetid://93227367495192",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_LeftNear__Stone",
+      "meshId": "rbxassetid://71604100160010",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_RightBack__Stone",
+      "meshId": "rbxassetid://123285821227243",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "Island_RightNear__Stone",
+      "meshId": "rbxassetid://117000799574037",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 2,
+      "name": "LanternFrame__Brass",
+      "meshId": "rbxassetid://90286783644784",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LanternPost__Stone",
+      "meshId": "rbxassetid://111677790672360",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 2,
+      "name": "LanternRoof__Brass",
+      "meshId": "rbxassetid://84248513135418",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_FarLeft__StoneLight",
+      "meshId": "rbxassetid://126182913557213",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_FarMid__StoneLight",
+      "meshId": "rbxassetid://104993841648561",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_FarRight__StoneLight",
+      "meshId": "rbxassetid://81903356154868",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_Hero__StoneLight",
+      "meshId": "rbxassetid://74974934799786",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_LeftMid__StoneLight",
+      "meshId": "rbxassetid://101308183652737",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_LeftNear__StoneLight",
+      "meshId": "rbxassetid://74548830572667",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_RightBack__StoneLight",
+      "meshId": "rbxassetid://124812217819543",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "LedgeRubble_RightNear__StoneLight",
+      "meshId": "rbxassetid://102903999226659",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://136110230043775",
+      "name": "MushroomSpots__Foam",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://101464346162130",
+      "name": "MushroomStem__Stem",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://105425688879855",
+      "name": "ParapetMoss__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://117635961855137",
+      "name": "PathFoliage__Fern",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://130963286861119",
+      "name": "PurpleFlowers__Flower",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://72882441353757",
+      "name": "RootMoss__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://124765323597199",
+      "name": "RootMoss__MossLight",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://75118614839724",
+      "name": "RuneCross__GlowAmber",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://101647817586976",
+      "name": "RuneVertical__GlowAmber",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "ShrineArch__StoneLight",
+      "meshId": "rbxassetid://97011310866174",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://87319028330740",
+      "name": "ShrineCandles__GlowAmber",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://127873708646955",
+      "name": "ShrineCaps__Moss",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 2,
+      "name": "ShrineInnerGold__Brass",
+      "meshId": "rbxassetid://117346819243214",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "",
+      "meshId": "rbxassetid://94445222586100",
+      "name": "ShrineNiche__ShrineDark",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "ShrinePillars__Stone",
+      "meshId": "rbxassetid://140236943038516",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 1,
+      "name": "ShrineSteps__StoneLight",
+      "meshId": "rbxassetid://110097958683445",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://87345844338752",
+      "name": "TreeBranches__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://102624338101482",
+      "name": "TreeRoots__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://92641930891599",
+      "name": "Trunk_00__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://102417512163045",
+      "name": "Trunk_01__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://122372254460152",
+      "name": "Trunk_02__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://71041970215694",
+      "name": "Trunk_03__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://89168273959609",
+      "name": "Trunk_04__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://87395530635272",
+      "name": "Trunk_05__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://104380993895241",
+      "meshId": "rbxassetid://80337139967593",
+      "name": "Trunk_06__Bark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://74176010108583",
+      "name": "VineLeaves_00__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://131409280202469",
+      "name": "VineLeaves_00__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://133489456696861",
+      "name": "VineLeaves_01__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://139275345137371",
+      "name": "VineLeaves_01__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://81814207783798",
+      "name": "VineLeaves_02__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://126604982295657",
+      "name": "VineLeaves_02__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://123289465792813",
+      "name": "VineLeaves_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://96699916718680",
+      "name": "VineLeaves_03__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://135824808793365",
+      "name": "VineLeaves_04__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://101018086356053",
+      "name": "VineLeaves_04__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://98341713816877",
+      "name": "VineLeaves_05__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://129700880483744",
+      "name": "VineLeaves_05__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://129711706104378",
+      "name": "VineLeaves_06__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://81663771723814",
+      "name": "VineLeaves_06__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://76309331737987",
+      "name": "VineLeaves_HeroA__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://89692076850659",
+      "name": "VineLeaves_HeroA__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://120002274694248",
+      "name": "VineLeaves_HeroB__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://73163034568342",
+      "name": "VineLeaves_HeroB__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://85608864416412",
+      "name": "VineLeaves_HeroC__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://110639421400376",
+      "name": "VineLeaves_HeroC__LeafMid",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://109878416842494",
+      "name": "Vines_00__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://87613026613231",
+      "name": "Vines_01__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://121319707869945",
+      "name": "Vines_02__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://106328032146876",
+      "name": "Vines_03__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://103581529161078",
+      "name": "Vines_04__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://122155074391216",
+      "name": "Vines_05__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://81981779616619",
+      "name": "Vines_06__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://116124932474094",
+      "name": "Vines_HeroA__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://121934594573310",
+      "name": "Vines_HeroB__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "textureId": "rbxassetid://107640576041100",
+      "meshId": "rbxassetid://76805584479192",
+      "name": "Vines_HeroC__LeafDark",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 5,
+      "name": "Walkable_Base__WetSlate",
+      "meshId": "rbxassetid://137303883004278",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 5,
+      "name": "Walkable_Paving__WetSlate",
+      "meshId": "rbxassetid://115606693353780",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 5,
+      "name": "Walkable_Paving__WetSlateLight",
+      "meshId": "rbxassetid://91695595060774",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Gorge__Water",
+      "meshId": "rbxassetid://80535892300685",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Head_0__Water",
+      "meshId": "rbxassetid://73408117161425",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Head_1__Water",
+      "meshId": "rbxassetid://118459678087738",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Head_2__Water",
+      "meshId": "rbxassetid://73943745297986",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Head_3__Water",
+      "meshId": "rbxassetid://110753857499737",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Head_4__Water",
+      "meshId": "rbxassetid://115985110348200",
+      "textureId": "",
+      "container": "DreamWorld"
+    },
+    {
+      "surface": 4,
+      "name": "Water_Pool__Water",
+      "meshId": "rbxassetid://73801374335921",
+      "textureId": "",
+      "container": "DreamWorld"
+    }
+  ],
+  "scene": "Lumenwild"
+}

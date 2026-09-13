@@ -1,14 +1,15 @@
--- Run once in Studio Edit mode after importing Lumenwild.glb at scene origin.
+-- Run once in Studio Edit mode after importing Lumenwild_Refined.glb at scene origin.
 -- No geometry is constructed here: every visible mesh comes from Blender.
 local ChangeHistoryService = game:GetService("ChangeHistoryService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
 local Lighting = game:GetService("Lighting")
 ChangeHistoryService:SetWaypoint("Before Lumenwild setup")
-local world = workspace:FindFirstChild("DreamWorld") or workspace:FindFirstChild("Lumenwild_Production")
-assert(world, "Import Assets/Exports/Lumenwild.glb first")
+local world = workspace:FindFirstChild("DreamWorld") or workspace:FindFirstChild("Lumenwild_Refined") or workspace:FindFirstChild("Lumenwild_Production")
+assert(world, "Import Assets/Exports/Lumenwild_Refined.glb first")
 world.Name = "DreamWorld"
 world.ModelStreamingMode=Enum.ModelStreamingMode.Persistent
+workspace.StreamingEnabled=false
 -- Studio's Front/Top glTF import rotates Y-up exports 180 degrees around Y.
 -- Apply the verified correction exactly once, before extracting the traveler.
 if not world:GetAttribute("AuthoredCoordinates") then
@@ -30,12 +31,13 @@ local palette={
  Earth={60,78,65}, Moss={84,117,55}, MossLight={115,142,68}, Bark={73,87,59}, BarkLight={111,124,76},
  LeafDark={43,95,62}, LeafMid={63,123,72}, LeafLight={96,151,82}, Grass={90,145,80}, Fern={60,131,88},
  Water={34,117,118},Waterfall={77,173,167},Foam={157,218,201},GlowCyan={80,226,222},Stem={95,157,145},
- Brass={169,128,60},GlowAmber={255,165,60},Roof={69,114,104},Cloth={46,74,72},Armor={105,125,128},Leather={84,68,50},Face={177,153,127}
+ Brass={169,128,60},GlowAmber={255,165,60},Roof={69,114,104},Cloth={46,74,72},Armor={105,125,128},Leather={84,68,50},Face={177,153,127},
+ Flower={133,77,179},LeafGold={126,147,60},ShrineDark={20,29,21}
 }
 local meshCount=0
 for _,p in world:GetDescendants() do
  if not p:IsA("BasePart") then continue end
- if p.Parent.Name:find("__") then p.Name=p.Parent.Name; p.Parent=world end
+ if p.Parent.Name:find("__") then p.Name=p.Parent.Name:gsub("%.%d+$",""); p.Parent=world end
  meshCount+=1
  p.Anchored=true; p.CanCollide=false; p.CanTouch=false
  p.CanQuery=p.Name:find("Walkable_")~=nil
@@ -45,7 +47,7 @@ for _,p in world:GetDescendants() do
   local c=Color3.fromRGB(table.unpack(palette[mat])); p.Color=c
   local sa=p:FindFirstChildWhichIsA("SurfaceAppearance")
   if sa then
-   sa.Color=c
+   sa.Color=sa.ColorMap~="" and Color3.new(1,1,1) or c
    -- glTF scalar metalness was ignored by this importer; empty map is dielectric.
    if mat=="WetSlate" or mat=="WetSlateLight" or mat=="Water" then sa.MetalnessMap="" end
   end
@@ -77,27 +79,28 @@ world.WorldPivot=CFrame.identity
 local styleSet=pcall(function() Lighting.LightingStyle=Enum.LightingStyle.Realistic end)
 local prioritySet=pcall(function() Lighting.PrioritizeLightingQuality=true end)
 Lighting.GlobalShadows=true
-Lighting.ClockTime=16.3
+Lighting.ClockTime=16.8
 Lighting.GeographicLatitude=35
-Lighting.Brightness=2.8
-Lighting.ExposureCompensation=-.15
-Lighting.Ambient=Color3.fromRGB(53,76,73)
-Lighting.OutdoorAmbient=Color3.fromRGB(89,112,105)
+Lighting.Brightness=3.6
+Lighting.ExposureCompensation=.1
+Lighting.ColorShift_Top=Color3.fromRGB(255,218,153)
+Lighting.Ambient=Color3.fromRGB(59,67,55)
+Lighting.OutdoorAmbient=Color3.fromRGB(117,127,105)
 Lighting.EnvironmentDiffuseScale=.65
 Lighting.EnvironmentSpecularScale=1
 Lighting.ShadowSoftness=.3
 local atmosphere=Lighting:FindFirstChildOfClass("Atmosphere") or Instance.new("Atmosphere",Lighting)
-atmosphere.Density=.32; atmosphere.Offset=.15; atmosphere.Color=Color3.fromRGB(175,205,188); atmosphere.Decay=Color3.fromRGB(80,113,106)
-atmosphere.Haze=1.35; atmosphere.Glare=.15
+atmosphere.Density=.29; atmosphere.Offset=.1; atmosphere.Color=Color3.fromRGB(222,219,190); atmosphere.Decay=Color3.fromRGB(124,142,126)
+atmosphere.Haze=1.7; atmosphere.Glare=.35
 local bloom=Lighting:FindFirstChildOfClass("BloomEffect") or Instance.new("BloomEffect",Lighting)
-bloom.Intensity=.3; bloom.Size=30; bloom.Threshold=1.2
+bloom.Intensity=.19; bloom.Size=25; bloom.Threshold=1.6
 local sun=Lighting:FindFirstChildOfClass("SunRaysEffect") or Instance.new("SunRaysEffect",Lighting)
 sun.Intensity=.065; sun.Spread=.75
 local dof=Lighting:FindFirstChildOfClass("DepthOfFieldEffect")
 if dof then dof.Enabled=false end
 local grade=Lighting:FindFirstChild("ForestGrade") or Instance.new("ColorCorrectionEffect")
 grade.Name="ForestGrade";grade.Saturation=.08;grade.Contrast=.08;grade.TintColor=Color3.fromRGB(240,255,242);grade.Parent=Lighting
-workspace.CurrentCamera.CFrame=CFrame.lookAt(Vector3.new(43,60,69),Vector3.new(0,5,0))
-workspace.CurrentCamera.FieldOfView=35
+workspace.CurrentCamera.CFrame=CFrame.lookAt(Vector3.new(35,35,56),Vector3.new(0,8,0))
+workspace.CurrentCamera.FieldOfView=48
 ChangeHistoryService:SetWaypoint("Lumenwild imported and configured")
 return {meshes=meshCount,travelerParts=#traveler:GetChildren(),lighting=tostring(Lighting.LightingStyle),styleSet=styleSet,prioritySet=prioritySet}

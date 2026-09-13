@@ -48,3 +48,20 @@ At 14:27:02 UTC user selected enchanted forest concept and explicitly reset the 
 - Actual 1080p viewport sample around 60fps, but full sustained performance acceptance remains open. Console empty. Click movement and wheel zoom verified; drag delta fix authored and awaits retest.
 - Independent Dream Loop judge scored runtime-01 2.0/10 (composition0.5 lighting0.7 materials0.6 details0.2). Main gaps: square plaza instead of diagonal bridge, missing giant tree shrine and ravine, rigid waterfall, oversimple canopy, cool flat lighting. Major composition rebuild underway.
 
+
+## Enchanted forest refinement
+- Rebuilt the plaza as a narrow diagonal bridge to a giant arched tree shrine. Added curved editable trunk/root meshes, distant arches, five aligned waterfall groups, purple plants, textured wet paving, packed bark/water/foliage maps, and ten additional cliff/tree groups.
+- Final Blender scene: 357 mesh objects and 270,046 evaluated triangles. All visible geometry originates in Blender 5.1.2. Earlier scenes and Studio imports are preserved.
+- Independent second judge: 3.5/10 (composition 1.5, lighting 0.8, materials 0.9, details 0.3), versus 2.0/10 initially. Main remaining gap was isolated platforms on open water; the final depth pass adds layered forest cliffs. This score predates final textures and depth refinement.
+- At manual graphics quality 10, Realistic lighting, 1919x1080 Play viewport, the pre-final-texture forest measured 60.0013 mean FPS over 3,600 frames; p95 17.8061ms, p99 18.3568ms. This supports an approximately 60fps average, not a perfectly stable 16.67ms budget.
+- Test desktop: Intel Core i5-12600KF, NVIDIA GeForce RTX 3080, driver 32.0.15.9649, 34,117,980,160 bytes installed physical memory reported by Windows.
+- Boundary click tested against world point (5.2,0.16,0): destination clamped to (4.5,0.16,-0.000655), arrived within the 0.12-stud stopping tolerance. Drag orbit fixed to use pointer displacement and verified from yaw 0.610865 to 0.251089 radians. Scroll and lazy follow were also observed in Play.
+- Final full GLB is being reimported with material-linked UVs; final saved-place results follow in validation.json. Initial two milestone commits were successfully pushed to origin/dream-loop/demo at about 15:13 UTC.
+
+## Final verification and delivery checkpoint
+- Final independent judge: 3.8/10 (composition 1.6, lighting 0.8, materials 1.0, details 0.4). Visual target fidelity is NOT accepted. Final actual Play screenshot: docs/Lumenwild-runtime.png.
+- Resolved blank/white textures by preserving importer MeshPart.TextureID for albedo-only bark/foliage, instead of adding a SurfaceAppearance that hid them. Bark and foliage asset loads then returned Success. PBR map IDs are retained from the importer; separate normal-map preload probes returned Failure, so individual normal-map delivery remains unverified.
+- Final runtime: 340 environment MeshParts, 17 local traveler MeshParts. Realistic lighting, PrioritizeLightingQuality true, streaming false. Source GLB: 357 mesh nodes, 287 mesh definitions, all 287 primitives with UVs, 26 materials and 10 embedded images.
+- Final 3600-frame sample: mean 60.0013 FPS, p95 17.7047ms, p99 18.2369ms at Manual10 and 1919x1080. Final control tests verified arrival at the clamped boundary, non-bridge click rejection, orbit and zoom. Console output empty.
+- Latest place saved at 15:19:03 UTC, 2,308,571 bytes; Studio reported the exact local path. Asset manifest records all357 mesh entries and6 distinct PBR surface sets.
+- Source files and packed art are being reviewed and committed for the final push. Remaining limitations are documented in README and validation.json, including visual fidelity, individual PBR map loading, camera occlusion, and untested published/cross-account behavior.

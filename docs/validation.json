@@ -1,0 +1,71 @@
+{
+  "dateUTC": "2026-09-13",
+  "timebox": {"startUTC": "14:27:02", "deadlineUTC": "15:27:02", "resetByUser": true},
+  "environment": {
+    "application": "Roblox Studio Play",
+    "studioVersion": "0.738.0.7381393",
+    "cpu": "Intel Core i5-12600KF",
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpuDriver": "32.0.15.9649",
+    "physicalMemoryBytes": 34117980160,
+    "viewportPixels": [1919, 1080],
+    "capturePixels": [1264, 711],
+    "graphicsQuality": "Manual 10",
+    "lighting": "Realistic",
+    "prioritizeLightingQuality": true
+  },
+  "finalFrameSample": {
+    "frameCount": 3600,
+    "approximateDurationSeconds": 60,
+    "meanFPS": 60.00133593095275,
+    "p95FrameMilliseconds": 17.70469918847084,
+    "p99FrameMilliseconds": 18.236899748444558,
+    "method": "Client BindToRenderStep delta; five-second warmup; rolling 3600-frame window",
+    "context": "Final imported textured forest, after movement/orbit/zoom interaction on this desktop",
+    "limitation": "Approximately 60 FPS average; perfectly stable 16.67ms frame budget not established. Not a published-client or multi-device benchmark."
+  },
+  "controls": {
+    "clickAndBoundaryClamp": "Click projected from world (5.2,0.16,0) produced destination (4.5,0.16,-0.040278); final arrival error 0 studs",
+    "nonBridgeClick": "Projected water click left destination and position unchanged",
+    "rightDragOrbit": "Observed yaw change from 0.610865 to 0.270326 radians",
+    "scrollZoom": "Observed distance change from 67 to 62 studs",
+    "lazyFollow": "Focus lag observed during movement and convergence observed at arrival",
+    "zoomLimits": "40-105 studs configured; extremes not individually exercised",
+    "animation": "Walking and idle motion observed; local environmental time advanced continuously"
+  },
+  "structure": {
+    "blenderVersion": "5.1.2",
+    "blenderMeshObjects": 357,
+    "evaluatedTriangles": 270046,
+    "glbMeshNodes": 357,
+    "glbMeshDefinitions": 287,
+    "glbPrimitivesWithUVs": 287,
+    "glbMaterials": 26,
+    "glbEmbeddedImages": 10,
+    "studioEnvironmentMeshParts": 340,
+    "travelerMeshParts": 17,
+    "streamingEnabled": false
+  },
+  "visualReview": {
+    "independentJudge": "forest_judge_03",
+    "actualScreenshot": "docs/Lumenwild-runtime.png",
+    "composition": 1.6,
+    "lighting": 0.8,
+    "materials": 1.0,
+    "details": 0.4,
+    "totalOutOf10": 3.8,
+    "previousTotals": [2.0, 3.5],
+    "targetMatchAccepted": false,
+    "remaining": ["Disconnected rectangular cliffs and exposed water", "Insufficient warm shafts and atmospheric depth", "Large simple roots, trees, waterfalls and foliage", "Repetitive borders and limited distant castle detail"]
+  },
+  "assetLoading": {
+    "barkAndFoliage": "Importer TextureID assets returned ContentProvider Success and displayed in Play",
+    "pbrMaps": "Imported SurfaceAppearance bindings retained; individual normal-map preload probes returned Failure, so per-map delivery is not independently established",
+    "recovery": "Removed artificial SurfaceAppearances that hid albedo-only TextureID bindings; preserved importer-generated maps",
+    "otherAccountAccess": "Not tested"
+  },
+  "console": "Empty console output after final control checks",
+  "savedPlace": "Places/Lumenwild.rbxl",
+  "saveVerifiedUTC": "2026-09-13 15:19:03",
+  "limitations": ["Visual target fidelity not achieved", "Orbit can reveal scenery edges or intersect foreground geometry", "No multiplayer gameplay, mobile, console or VR validation", "No published-client validation"]
+}

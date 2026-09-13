@@ -14,6 +14,7 @@ pcall(function() StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, false) end)
 local actor = template:Clone()
 actor.Name = "LocalTraveler"
 actor.Parent = workspace
+actor:ScaleTo(Config.ActorScale)
 local parts = {}
 local origin = actor:GetPivot()
 for _,part in actor:GetDescendants() do
@@ -30,7 +31,7 @@ camera.CameraType = Enum.CameraType.Scriptable
 camera.FieldOfView = Config.FieldOfView
 local position = Config.Spawn
 local destination = position
-local focus = position + Vector3.new(0, 3, 0)
+local focus = position + Config.FocusOffset
 local yaw, desiredYaw = Config.CameraYaw, Config.CameraYaw
 local distance, desiredDistance = Config.CameraDistance, Config.CameraDistance
 local heading = 0
@@ -61,9 +62,9 @@ local function label(name, text, position2, size, font, color)
  l.Parent = gui
  return l
 end
-local title = label("Title", Config.Title, UDim2.new(0,32,0,26), UDim2.fromOffset(700,34), Enum.Font.Garamond, Color3.fromRGB(230,221,198))
+local title = label("Title", Config.Title, UDim2.new(0,140,0,26), UDim2.fromOffset(700,34), Enum.Font.Garamond, Color3.fromRGB(230,221,198))
 title.TextSize = 28
-label("Subtitle", Config.Subtitle, UDim2.new(0,34,0,61), UDim2.fromOffset(650,24), Enum.Font.Gotham, Color3.fromRGB(151,174,179)).TextSize = 11
+label("Subtitle", Config.Subtitle, UDim2.new(0,142,0,61), UDim2.fromOffset(650,24), Enum.Font.Gotham, Color3.fromRGB(151,174,179)).TextSize = 11
 label("Controls", "CLICK TO WALK     ·     DRAG TO ORBIT     ·     SCROLL TO ZOOM", UDim2.new(0,32,1,-47), UDim2.fromOffset(700,24), Enum.Font.Gotham, Color3.fromRGB(205,213,210)).TextSize = 11
 local perf = label("Performance", "", UDim2.new(1,-225,1,-47), UDim2.fromOffset(200,24), Enum.Font.Code, Color3.fromRGB(155,178,181))
 perf.TextXAlignment = Enum.TextXAlignment.Right
@@ -126,16 +127,26 @@ RunService:BindToRenderStep("DreamPresentation", Enum.RenderPriority.Camera.Valu
  for _,entry in parts do
   local name = entry.part.Name
   local sway = CFrame.identity
-  if name:find("LegL") or name:find("ArmR") then
-   sway = CFrame.Angles(walking and math.sin(phase)*0.35 or 0,0,0)
-  elseif name:find("LegR") or name:find("ArmL") then
-   sway = CFrame.Angles(walking and -math.sin(phase)*0.35 or 0,0,0)
+  local joint = CFrame.identity
+  if name:find("LegL") or name:find("BootL") then
+   joint=CFrame.new(-.33,1.2,0)
+   sway=CFrame.Angles(walking and math.sin(phase)*.35 or 0,0,0)
+  elseif name:find("LegR") or name:find("BootR") then
+   joint=CFrame.new(.33,1.2,0)
+   sway=CFrame.Angles(walking and -math.sin(phase)*.35 or 0,0,0)
+  elseif name:find("ArmL") or name:find("Lantern") then
+   joint=CFrame.new(-.9,2.35,0)
+   sway=CFrame.Angles(walking and -math.sin(phase)*.25 or 0,0,0)
+  elseif name:find("ArmR") then
+   joint=CFrame.new(.9,2.35,0)
+   sway=CFrame.Angles(walking and math.sin(phase)*.25 or 0,0,0)
   elseif name:find("Cloak") then
    sway = CFrame.Angles(math.sin(phase*0.7)*0.04,0,math.sin(phase*0.5)*0.025)
   end
-  entry.part.CFrame = root*entry.localCF*sway
+  joint=CFrame.new(joint.Position*Config.ActorScale)
+  entry.part.CFrame = root*joint*sway*joint:Inverse()*entry.localCF
  end
- focus = focus:Lerp(position+Vector3.new(0,3,0),1-math.exp(-3*step))
+ focus = focus:Lerp(position+Config.FocusOffset,1-math.exp(-3*step))
  yaw += (desiredYaw-yaw)*(1-math.exp(-10*step))
  distance += (desiredDistance-distance)*(1-math.exp(-9*step))
  local offset = Vector3.new(math.sin(yaw)*math.cos(Config.CameraPitch),math.sin(Config.CameraPitch),math.cos(yaw)*math.cos(Config.CameraPitch))*distance

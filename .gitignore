@@ -8,6 +8,7 @@
 # Temporary files
 *.tmp
 *.log
+*.rbxl.lock
 __pycache__/
 
 # Credentials

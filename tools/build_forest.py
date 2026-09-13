@@ -247,4 +247,3 @@ for o in objects:
 manifest={'scene':scene.name,'seed':31,'objects':len(objects),'triangles':tris,'world_bounds_studs':[-120,-10,-120,120,80,70],'walk_bounds':[-20,-13,20,19],'coordinate_conversion':'Roblox(x,y,z) -> Blender(x,-z,y) -> glTF(x,y,z)','objects_by_name':[o.name for o in objects]}
 (ROOT/'Assets'/'Exports'/'manifest.json').write_text(json.dumps(manifest,indent=2))
 result=manifest
-
