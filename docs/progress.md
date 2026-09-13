@@ -65,3 +65,8 @@ At 14:27:02 UTC user selected enchanted forest concept and explicitly reset the 
 - Final 3600-frame sample: mean 60.0013 FPS, p95 17.7047ms, p99 18.2369ms at Manual10 and 1919x1080. Final control tests verified arrival at the clamped boundary, non-bridge click rejection, orbit and zoom. Console output empty.
 - Latest place saved at 15:19:03 UTC, 2,308,571 bytes; Studio reported the exact local path. Asset manifest records all357 mesh entries and6 distinct PBR surface sets.
 - Source files and packed art are being reviewed and committed for the final push. Remaining limitations are documented in README and validation.json, including visual fidelity, individual PBR map loading, camera occlusion, and untested published/cross-account behavior.
+
+## Saved-file verification
+- Delivery commit 3b1b4b8 was pushed successfully with 66MB of LFS assets. Local HEAD matched origin/dream-loop/demo, worktree was clean, and git lfs fsck passed.
+- At 15:22:42 UTC, verified a real disk reopen: closed the place to Studio Home, opened Places/Lumenwild.rbxl, and entered Play. All340 environment meshes and17 traveler meshes persisted, as did the texture bindings, Realistic lighting, streaming settings and FocusOffset(-6,8,-10). Traveler and environmental motion ran; console empty. Reopened viewport was1920x1078 at Manual10.
+- Visual fidelity remains below target at3.8/10; the completed delivery is a timeboxed playable graphics prototype, not a claim that the generated target was matched.

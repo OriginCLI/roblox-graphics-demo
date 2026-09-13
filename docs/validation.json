@@ -67,5 +67,13 @@
   "console": "Empty console output after final control checks",
   "savedPlace": "Places/Lumenwild.rbxl",
   "saveVerifiedUTC": "2026-09-13 15:19:03",
+  "diskReopenVerification": {
+    "verifiedUTC": "2026-09-13 15:22:42",
+    "method": "Closed the scene to Studio Home, reopened Places/Lumenwild.rbxl from disk, then entered Play",
+    "result": "340 environment meshes, 17 traveler meshes, saved texture IDs, Realistic lighting and streaming settings retained; traveler and environment ran; console empty",
+    "cameraFocusOffset": [-6, 8, -10],
+    "quality": "Manual 10",
+    "reopenViewportPixels": [1920, 1078]
+  },
   "limitations": ["Visual target fidelity not achieved", "Orbit can reveal scenery edges or intersect foreground geometry", "No multiplayer gameplay, mobile, console or VR validation", "No published-client validation"]
 }

@@ -72,6 +72,8 @@ Observed controls include click movement and arrival, clamping a click beyond X=
 
 The final 3,600-frame sample averaged **60.00 FPS**, with **17.70 ms p95** and **18.24 ms p99**, on an **i5-12600KF / RTX 3080** desktop. The final independent visual match was **3.8/10**, improved from 2.0/10 but below the Dream Loop acceptance threshold. The actual Play screenshot is `docs/Lumenwild-runtime.png`.
 
+The saved place was closed, reopened from disk, and run again successfully. The scene, traveler, texture bindings, lighting, camera configuration, and client effects persisted; the console remained empty.
+
 Texture recovery preserved the importer's `MeshPart.TextureID` for albedo-only bark/foliage and `SurfaceAppearance` for PBR materials. Bark and foliage returned successful asset loads and displayed in Play. Individual PBR normal-map preload probes returned failure; the saved bindings and visible wet response do not independently prove every normal map loaded. Cross-account asset access is unverified.
 
 The generated target remains more intricate than this timeboxed implementation. Remaining gaps include natural waterfall silhouettes, dense irregular roots and foliage, castle detail, atmospheric depth, and a closer material/lighting match. A 60 FPS average does not establish a perfectly stable 16.67 ms frame budget. Mobile, console, VR, other computers, and published-client behavior were outside scope.
